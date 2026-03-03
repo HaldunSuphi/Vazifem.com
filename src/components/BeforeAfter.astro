@@ -1,0 +1,24 @@
+---
+import BeforeAfterSlider from './react/BeforeAfterSlider.tsx';
+---
+
+<section class="py-16 sm:py-20 lg:py-28 bg-white">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    {/* Section title */}
+    <div class="text-center mb-10 sm:mb-14 section-reveal">
+      <h2 class="font-serif text-2xl sm:text-3xl lg:text-4xl text-neutral-900 mb-4">
+        Bakım Öncesi ve Sonrası
+      </h2>
+    </div>
+
+    {/* Slider */}
+    <div class="section-reveal">
+      <BeforeAfterSlider client:visible />
+    </div>
+
+    {/* Disclaimer */}
+    <p class="text-center text-sm text-neutral-400 mt-6">
+      Görseller temsilidir, gerçek fotoğraflar yakında eklenecektir.
+    </p>
+  </div>
+</section>
