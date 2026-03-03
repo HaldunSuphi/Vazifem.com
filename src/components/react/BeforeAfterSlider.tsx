@@ -92,8 +92,8 @@ function CemeteryAfter() {
           <stop offset="100%" stopColor="#c8e6f0" />
         </linearGradient>
         <linearGradient id="grassAfter" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="#4ade80" />
-          <stop offset="100%" stopColor="#22c55e" />
+          <stop offset="0%" stopColor="#6f9f7e" />
+          <stop offset="100%" stopColor="#5a8a6a" />
         </linearGradient>
       </defs>
       <rect width="800" height="500" fill="url(#skyAfter)" />
@@ -108,9 +108,9 @@ function CemeteryAfter() {
       {/* Background trees - healthy */}
       <g opacity="0.5">
         <rect x="115" y="200" width="10" height="120" rx="2" fill="#7a5c3a" />
-        <ellipse cx="120" cy="175" rx="30" ry="40" fill="#16a34a" />
+        <ellipse cx="120" cy="175" rx="30" ry="40" fill="#5a8a6a" />
         <rect x="675" y="180" width="10" height="130" rx="2" fill="#7a5c3a" />
-        <ellipse cx="680" cy="155" rx="35" ry="45" fill="#15803d" />
+        <ellipse cx="680" cy="155" rx="35" ry="45" fill="#3d6b4f" />
       </g>
 
       {/* Small clouds */}
@@ -147,9 +147,9 @@ function CemeteryAfter() {
         <circle cx="315" cy="344" r="6" fill="#facc15" />
         <circle cx="300" cy="336" r="5" fill="#f472b6" />
         <circle cx="310" cy="334" r="5" fill="#a78bfa" />
-        <path d="M298,345 L296,355" stroke="#22c55e" strokeWidth="1.5" />
-        <path d="M305,340 L305,355" stroke="#22c55e" strokeWidth="1.5" />
-        <path d="M313,343 L315,355" stroke="#22c55e" strokeWidth="1.5" />
+        <path d="M298,345 L296,355" stroke="#5a8a6a" strokeWidth="1.5" />
+        <path d="M305,340 L305,355" stroke="#5a8a6a" strokeWidth="1.5" />
+        <path d="M313,343 L315,355" stroke="#5a8a6a" strokeWidth="1.5" />
       </g>
 
       {/* Fresh flowers - right */}
@@ -160,9 +160,9 @@ function CemeteryAfter() {
         <circle cx="505" cy="344" r="6" fill="#f472b6" />
         <circle cx="490" cy="335" r="5" fill="#fb923c" />
         <circle cx="500" cy="333" r="5.5" fill="#a78bfa" />
-        <path d="M488,345 L486,355" stroke="#22c55e" strokeWidth="1.5" />
-        <path d="M495,340 L495,355" stroke="#22c55e" strokeWidth="1.5" />
-        <path d="M503,343 L505,355" stroke="#22c55e" strokeWidth="1.5" />
+        <path d="M488,345 L486,355" stroke="#5a8a6a" strokeWidth="1.5" />
+        <path d="M495,340 L495,355" stroke="#5a8a6a" strokeWidth="1.5" />
+        <path d="M503,343 L505,355" stroke="#5a8a6a" strokeWidth="1.5" />
       </g>
 
       {/* Side tombstones - also clean */}
@@ -178,9 +178,9 @@ function CemeteryAfter() {
 
       {/* Trimmed grass details */}
       <g opacity="0.3">
-        <path d="M340,378 Q342,372 344,378" stroke="#15803d" strokeWidth="1" fill="none" />
-        <path d="M450,380 Q452,374 454,380" stroke="#15803d" strokeWidth="1" fill="none" />
-        <path d="M360,382 Q362,376 364,382" stroke="#15803d" strokeWidth="1" fill="none" />
+        <path d="M340,378 Q342,372 344,378" stroke="#3d6b4f" strokeWidth="1" fill="none" />
+        <path d="M450,380 Q452,374 454,380" stroke="#3d6b4f" strokeWidth="1" fill="none" />
+        <path d="M360,382 Q362,376 364,382" stroke="#3d6b4f" strokeWidth="1" fill="none" />
       </g>
 
       {/* Butterflies */}
@@ -199,7 +199,7 @@ function CustomHandle() {
     <ReactCompareSliderHandle
       buttonStyle={{
         backdropFilter: undefined,
-        background: '#16a34a',
+        background: '#5a8a6a',
         border: '3px solid white',
         color: 'white',
         boxShadow: '0 4px 15px rgba(0,0,0,0.2)',
@@ -207,7 +207,7 @@ function CustomHandle() {
         height: 40,
       }}
       linesStyle={{
-        color: '#16a34a',
+        color: '#5a8a6a',
         width: 3,
       }}
     />
