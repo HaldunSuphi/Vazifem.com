@@ -1,33 +1,38 @@
 @import "tailwindcss";
 
 @theme {
-  /* Primary green palette */
-  --color-primary-50: #f0fdf4;
-  --color-primary-100: #dcfce7;
-  --color-primary-200: #bbf7d0;
-  --color-primary-300: #86efac;
-  --color-primary-400: #4ade80;
-  --color-primary-500: #22c55e;
-  --color-primary-600: #16a34a;
-  --color-primary-700: #15803d;
-  --color-primary-800: #166534;
-  --color-primary-900: #14532d;
+  /* Primary sage green palette */
+  --color-primary-50: #f2f7f4;
+  --color-primary-100: #e0ebe4;
+  --color-primary-200: #c1d7c9;
+  --color-primary-300: #97bda4;
+  --color-primary-400: #6f9f7e;
+  --color-primary-500: #5a8a6a;
+  --color-primary-600: #3d6b4f;
+  --color-primary-700: #325842;
+  --color-primary-800: #2a4737;
+  --color-primary-900: #1e3428;
 
-  /* Neutrals */
-  --color-cream: #faf9f6;
-  --color-neutral-50: #fafaf9;
-  --color-neutral-100: #f5f5f4;
-  --color-neutral-200: #e7e5e4;
-  --color-neutral-300: #d6d3d1;
-  --color-neutral-400: #a8a29e;
-  --color-neutral-500: #78716c;
-  --color-neutral-600: #57534e;
-  --color-neutral-700: #44403c;
-  --color-neutral-800: #292524;
-  --color-neutral-900: #1c1917;
+  /* Warm neutrals */
+  --color-cream: #faf8f5;
+  --color-sand: #f3efe8;
+  --color-neutral-50: #faf8f5;
+  --color-neutral-100: #f3efe8;
+  --color-neutral-200: #e8e2d9;
+  --color-neutral-300: #d5cdc2;
+  --color-neutral-400: #b0a798;
+  --color-neutral-500: #8a8072;
+  --color-neutral-600: #6b6255;
+  --color-neutral-700: #4a4339;
+  --color-neutral-800: #352f28;
+  --color-neutral-900: #2d2926;
 
-  /* Font */
-  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  /* Terracotta accent */
+  --color-terracotta: #c17a5a;
+
+  /* Typography */
+  --font-sans: 'DM Sans', system-ui, -apple-system, sans-serif;
+  --font-serif: 'DM Serif Display', Georgia, 'Times New Roman', serif;
 }
 
 /* Smooth scroll with offset for sticky nav */
@@ -45,26 +50,4 @@ html {
 .section-reveal.revealed {
   opacity: 1;
   transform: translateY(0);
-}
-
-/* CTA pulse glow animation */
-@keyframes pulse-glow {
-  0%, 100% {
-    box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.4);
-  }
-  50% {
-    box-shadow: 0 0 20px 6px rgba(22, 163, 74, 0.2);
-  }
-}
-.btn-pulse {
-  animation: pulse-glow 2.5s ease-in-out infinite;
-}
-
-/* Scroll chevron bounce */
-@keyframes bounce-down {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(8px); }
-}
-.animate-bounce-down {
-  animation: bounce-down 2s ease-in-out infinite;
 }
