@@ -21,7 +21,7 @@ const {
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta name="keywords" content="mezar bakımı, mezar temizliği, kabir ziyareti, mezarlık hizmeti, güvenilir bakım, şeffaf hizmet" />
-    <link rel="canonical" href="https://vazifem.com" />
+    <link rel="canonical" href={`https://vazifem.com${Astro.url.pathname === '/' ? '' : Astro.url.pathname}`} />
     <meta name="robots" content="index, follow" />
 
     <!-- Open Graph -->

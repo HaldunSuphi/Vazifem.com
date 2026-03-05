@@ -1,0 +1,93 @@
+---
+import Layout from './Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+  effectiveDate?: string;
+  version?: string;
+}
+
+const {
+  title,
+  description = title + ' - Vazifem',
+  effectiveDate,
+  version,
+} = Astro.props;
+---
+
+<Layout title={`${title} - Vazifem`} description={description}>
+  <Navbar />
+
+  <main class="pt-24 pb-16 sm:pt-28 sm:pb-20">
+    <article class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+      <header class="mb-8 sm:mb-10">
+        <h1 class="text-2xl sm:text-3xl font-bold text-neutral-800 font-serif">
+          {title}
+        </h1>
+        {(effectiveDate || version) && (
+          <div class="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-sm text-neutral-500">
+            {effectiveDate && <span>Yürürlük: {effectiveDate}</span>}
+            {version && <span>Versiyon: {version}</span>}
+          </div>
+        )}
+      </header>
+
+      <div class="legal-content">
+        <slot />
+      </div>
+    </article>
+  </main>
+
+  <Footer />
+  <WhatsAppButton />
+</Layout>
+
+<style is:global>
+  .legal-content h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-neutral-800);
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .legal-content p {
+    color: var(--color-neutral-600);
+    line-height: 1.75;
+    margin-bottom: 1rem;
+  }
+
+  .legal-content ul,
+  .legal-content ol {
+    color: var(--color-neutral-600);
+    line-height: 1.75;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+  }
+
+  .legal-content ul {
+    list-style-type: disc;
+  }
+
+  .legal-content ol {
+    list-style-type: decimal;
+  }
+
+  .legal-content li {
+    margin-bottom: 0.25rem;
+  }
+
+  .legal-content a {
+    color: var(--color-primary-600);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .legal-content a:hover {
+    color: var(--color-primary-700);
+  }
+</style>

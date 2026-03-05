@@ -1,0 +1,63 @@
+---
+import LegalLayout from '../layouts/LegalLayout.astro';
+---
+
+<LegalLayout
+  title="Gizlilik Politikası"
+  effectiveDate="05.03.2026"
+  version="1.1"
+>
+  <h2>1. Kapsam</h2>
+  <p>Bu politika, Vazifem mobil uygulamasında işlenen kişisel verileri, paylaşım/aktarım süreçlerini ve kullanıcı haklarını açıklar.</p>
+
+  <h2>2. Toplanan Veriler</h2>
+  <p>Toplayabileceğimiz veriler:</p>
+  <ul>
+    <li>Ad-soyad, e-posta, telefon, adres (opsiyonel — il, ilçe, mahalle, sokak, bina no)</li>
+    <li>Şifre (hash), hesap bilgileri</li>
+    <li>Seçilen hizmetler (hizmet sepeti), talep/teklif/süreç bilgileri; mezar yeri bilgileri (kullanıcı tarafından sağlanan)</li>
+    <li>Vefat eden kişi ad-soyad, doğum tarihi ve vefat tarihi (kullanıcı tarafından talep oluşturma sırasında girilir; doğru mezar eşleştirmesi için kullanılır)</li>
+    <li>Talep notu/özel istek</li>
+    <li>Opsiyonel talep öncesi foto; zorunlu başlangıç ve sonuç fotoğrafları</li>
+    <li>Teknik veriler: IP, cihaz markası/modeli, OS, uygulama sürümü, FCM token, anonimleştirilmiş cihaz tanımlayıcısı, log/hata kayıtları (asgari)</li>
+    <li>Destek talepleri: Ad-soyad, e-posta, telefon ve talep içeriği</li>
+  </ul>
+  <p>MVP kapsamında uygulama içi ödeme/kart bilgisi toplanmaz.</p>
+
+  <h2>3. Fotoğraflar ve Saklama</h2>
+  <p>Fotoğraflar, hizmetin başlatıldığının ve tamamlandığının kanıtlanması ve "öncesi–sonrası" kıyasına imkân sağlanması amacıyla kullanılır.</p>
+  <p>Fotoğraflar Google Cloud Storage (GCS) üzerinde saklanır.</p>
+  <p>İş tamamlandıktan sonra fotoğraflar 6 ay saklanır ve ardından silinir.</p>
+
+  <h2>4. Saha Personeli / Hizmet Sağlayıcı Erişimi</h2>
+  <p>Saha personeli yalnızca atandığı iş için:</p>
+  <ul>
+    <li>Müşteri ad-soyad</li>
+    <li>Mezar bilgileri</li>
+    <li>İş detayları + müşteri notu</li>
+    <li>Vefat eden kişi ad-soyad (doğru eşleştirme için)</li>
+    <li>Talep öncesi opsiyonel fotoğrafı görebilir ve başlangıç/sonuç fotoğrafını yükleyebilir</li>
+  </ul>
+  <p>erişebilir. Müşterinin telefon/e-posta bilgileri saha personeline gösterilmez.</p>
+
+  <h2>5. Bildirimler (MVP)</h2>
+  <p>Vazifem, süreç adımlarını (başlangıç ve sonuç fotoğrafı gibi) bildirmek için push bildirim kullanabilir.</p>
+  <p>Bildirimlerin iletilebilmesi için cihazda işletim sistemi düzeyinde bildirim izninin verilmesi gerekir.</p>
+  <p>Bildirim izni kapalıysa uygulama kullanıcıya bilgilendirici bir uyarı gösterebilir; kullanıcı süreç güncellemelerini uygulama içinden takip etmelidir.</p>
+
+  <h2>6. Yurt Dışına Aktarım</h2>
+  <p>Google altyapısı/global servis mimarisi ve MongoDB Atlas veritabanı hizmeti nedeniyle verilerin yurt dışında işlenmesi/aktarımı söz konusu olabilir.</p>
+
+  <h2>7. Saklama ve Silme</h2>
+  <ul>
+    <li>Fotoğraflar: 6 ay</li>
+    <li>Talep/sipariş kayıtları (anonim): 2 yıl</li>
+    <li>Teknik loglar: 30 gün; denetim kayıtları: 365 gün</li>
+    <li>Hesap silme: Kimlik/iletişim verileri derhal anonimleştirilir (maskelenir). Hesap kaydı anonimleştirilmiş biçimde sistemde kalır.</li>
+    <li>Destek talepleri: Hesap silinse dahi, destek taleplerindeki bilgiler kayıt bütünlüğü amacıyla saklanabilir.</li>
+    <li>Yedekleme bulunması halinde silme/anonimleştirme gecikmeli yansıyabilir.</li>
+  </ul>
+
+  <h2>8. İletişim</h2>
+  <p><a href="mailto:support@vazifem.com">support@vazifem.com</a> – <a href="tel:+905315526718">0 (531) 552 67 18</a></p>
+</LegalLayout>
