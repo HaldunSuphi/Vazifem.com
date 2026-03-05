@@ -1,0 +1,76 @@
+---
+import LegalLayout from '../layouts/LegalLayout.astro';
+---
+
+<LegalLayout
+  title="KVKK Aydınlatma Metni"
+  effectiveDate="05.03.2026"
+  version="1.1"
+>
+  <h2>1. Veri Sorumlusu</h2>
+  <p>
+    6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamında veri sorumlusu:<br />
+    Haldun Suphi Seyhun (Vazifem markası altında faaliyet gösteren gerçek kişi)<br />
+    Adres: Kadıköy / İstanbul<br />
+    E-posta: <a href="mailto:support@vazifem.com">support@vazifem.com</a><br />
+    Telefon: <a href="tel:+905315526718">0 (531) 552 67 18</a>
+  </p>
+
+  <h2>2. İşlenen Kişisel Veriler</h2>
+  <p>Vazifem mobil uygulaması ve ilgili süreçler kapsamında aşağıdaki kişisel veriler işlenebilir:</p>
+  <ul>
+    <li>(a) Kimlik/İletişim: Ad-soyad, e-posta, telefon, adres (opsiyonel — il, ilçe, mahalle, sokak, bina no)</li>
+    <li>(b) Hesap: Şifre (hash'lenmiş), üyelik bilgileri</li>
+    <li>(c) Hizmet Seçimi ve Talep Süreci: Seçilen hizmetler (hizmet sepeti), talep/teklif kabul bilgileri, mezarlık/mezar yeri bilgileri (mezarlık adı, ada/parsel vb. kullanıcı tarafından sağlanan bilgiler), müşteri onayı durumları</li>
+    <li>(d) Vefat Eden Kişiye Ait Bilgi: Vefat eden kişiye ait ad-soyad, doğum tarihi ve vefat tarihi bilgileri (kullanıcı tarafından talep oluşturma sırasında girilir; doğru mezar eşleştirmesi ve hizmetin ifası için kullanılır)</li>
+    <li>(e) İçerik: Talep notu/özel istekler</li>
+    <li>(f) Fotoğraflar: Talep öncesi opsiyonel mezar fotoğrafı; zorunlu başlangıç fotoğrafı ve zorunlu sonuç fotoğrafı</li>
+    <li>(g) İşlem Güvenliği/Teknik Veriler: IP adresi, cihaz markası/modeli, işletim sistemi bilgileri, uygulama sürümü, push bildirim token'ı (FCM token), anonimleştirilmiş cihaz tanımlayıcısı (hash'lenmiş), hata/işlem kayıtları (loglar) gibi teknik veriler (asgari düzeyde)</li>
+    <li>(h) Destek Talepleri: Destek talebi oluşturulurken kullanıcı ad-soyad, e-posta, telefon bilgileri ve talep içeriği ayrıca kaydedilir.</li>
+  </ul>
+  <p>Uygulama GPS konum izni talep etmez; "mezar yeri" bilgisi kullanıcı tarafından girilen mezarlık/ada/parsel vb. bilgilerdir.</p>
+
+  <h2>3. Kişisel Verilerin İşlenme Amaçları</h2>
+  <p>Kişisel verileriniz;</p>
+  <ul>
+    <li>Üyelik ve hesap yönetimi, kimlik doğrulama</li>
+    <li>Hizmet seçimi (hizmet sepeti oluşturma) ve talep oluşturma süreçlerinin yürütülmesi</li>
+    <li>Teklif kabulü, mezar konumu onayı ve saha operasyonunun planlanması/yürütülmesi</li>
+    <li>Hizmetin başlatıldığının ve tamamlandığının fotoğraflarla kanıtlanması; "öncesi–sonrası" kıyasına imkân sağlanması</li>
+    <li>Müşteri onayı ve bilgilendirme süreçlerinin yürütülmesi</li>
+    <li>Destek taleplerinin alınması, değerlendirilmesi ve yanıtlanması</li>
+    <li>Uygulamanın çalıştırılması, güvenlik, suistimal önleme, hata giderme ve bildirim iletimi</li>
+    <li>Hukuki yükümlülüklerin yerine getirilmesi ve olası uyuşmazlıklarda hakların tesisi/kullanılması/korunması</li>
+  </ul>
+  <p>amaçlarıyla işlenir.</p>
+
+  <h2>4. Hukuki Sebepler</h2>
+  <p>Kişisel verileriniz; KVKK m.5 kapsamında sözleşmenin kurulması/ifası, hukuki yükümlülük, hakkın tesisi/kullanılması/korunması ve meşru menfaat hukuki sebeplerine dayanarak işlenebilir.</p>
+
+  <h2>5. Kişisel Verilerin Aktarılması</h2>
+  <p>Verileriniz;</p>
+  <ul>
+    <li>Bağımsız hizmet sağlayıcılara / saha personeline (yalnızca atandığı iş için gerekli ölçüde: müşteri ad-soyad, mezar bilgisi, iş detayları, not, vefat eden kişi ad-soyad bilgisi ve fotoğraflar; müşterinin telefon/e-postası paylaşılmaz)</li>
+    <li>MongoDB Atlas (veritabanı barındırma)</li>
+    <li>Google Cloud Storage (GCS) (fotoğraf/dosya saklama)</li>
+    <li>Firebase Cloud Messaging (FCM) (push bildirim iletimi)</li>
+    <li>Yetkili kamu kurum ve kuruluşlarına (yasal yükümlülük halinde)</li>
+  </ul>
+  <p>aktarılabilir.</p>
+
+  <h2>6. Yurt Dışına Aktarım</h2>
+  <p>Google altyapısı/global servis mimarisi ve MongoDB Atlas veritabanı hizmeti nedeniyle verilerin yurt dışında bulunan sunucularda işlenmesi/aktarımı söz konusu olabilir.</p>
+
+  <h2>7. Saklama Süreleri</h2>
+  <ul>
+    <li>Fotoğraflar: İş tamamlandıktan sonra 6 ay saklanır, ardından silinir</li>
+    <li>Teknik log/hata kayıtları: 30 gün; denetim kayıtları: 365 gün</li>
+    <li>Hesap silme: Ad-soyad, e-posta, telefon, adres gibi kimlik/iletişim verileri derhal anonimleştirilir (maskelenir). Hesap kaydı anonimleştirilmiş biçimde sistemde kalır.</li>
+    <li>Destek talepleri: Hesap silinse dahi, daha önce oluşturulan destek taleplerindeki ad-soyad, e-posta ve telefon bilgileri kayıt bütünlüğü amacıyla saklanabilir.</li>
+    <li>Talep/sipariş kayıtları: Kimlikten arındırılmış/anonimleştirilmiş şekilde 2 yıl saklanabilir.</li>
+    <li>Yedekleme (backup) bulunması halinde silme/anonimleştirme işlemleri yedeklere gecikmeli yansıyabilir.</li>
+  </ul>
+
+  <h2>8. Haklarınız ve Başvuru</h2>
+  <p>KVKK kapsamındaki taleplerinizi <a href="mailto:support@vazifem.com">support@vazifem.com</a> üzerinden iletebilirsiniz. Başvurularda kimlik doğrulaması talep edilebilir.</p>
+</LegalLayout>
